@@ -1,0 +1,9 @@
+p {
+  font-family: roboto, sans-serif;
+  font-size: 1em;
+  line-height: 1.7em;
+}
+
+.mejs__button {
+  background-color: red;
+}
