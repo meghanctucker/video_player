@@ -10,9 +10,14 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous">
     </script>
+
     <script
       src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.12/mediaelement-and-player.min.js'>
     </script>
+    <script
+    src='js/video.js'>
+    </script>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.12/mediaelementplayer.min.css' rel='stylesheet'>
     <link href='css/video.css' rel='stylesheet'>
@@ -21,8 +26,9 @@
 
   <body>
 
-    <div class='video'>
-      <video>
+    <div class= "page__container">
+    <div>
+      <video class= 'video' style= "max-width: 100%;" >
           <source src='video/video.mp4'type='video/mp4'>
           <source src='video/vido.ogg'type='video/ogg'>
       </video>
@@ -119,12 +125,13 @@
       </p>
 
     </div>
-    
+
+
     <script>
       $('video').mediaelementplayer({
-        features: ['playpause', 'current', 'progress', 'duration', 'fullscreen', 'volume' ]
+        features: ['playpause', 'current', 'progress', 'duration', 'volume', 'fullscreen']
       });
     </script>
-    <script src='js/video.js'></script>
+
   </body>
 </html>

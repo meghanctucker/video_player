@@ -1,9 +1,21 @@
 p {
   font-family: roboto, sans-serif;
   font-size: 1em;
-  line-height: 1.7em;
+  line-height: 2em;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.mejs__button {
-  background-color: red;
+
+@media (min-width: 768px) {
+  .page__container {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  p {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
