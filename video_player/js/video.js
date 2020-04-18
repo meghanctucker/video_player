@@ -1,26 +1,19 @@
 
-
-const testing = document.getElementsByClassName("testClick");
-
-
-
-for (let i = 0; testing.length; i += 1) {
-testing[i].addEventListener("mouseover", () => {
-  testing[i].style.color = "#f7ac57";
-});
-
-testing[i].addEventListener("mouseout", () => {
-  testing[i].style.color = "black";
-})
-}
-
+//create array to pull data start attribute value and set it as new array value. 
 
 //const spanItems = document.getElementsByTagName("span")[0];
+//const testing = document.getElementsByClassName("testClick");
+const dStart = document.querySelectorAll("span[data-start]");
 
 //spanItems.addEventListener("click", () => {
 //    spanItems.textContent = spanItems.textContent.toUpperCase();
 //});
+
+  let myValue = dStart.getAttribute("data-start"); //This should get the data start value
+  console.log(myValue);
+
 // use data-start and data-end attributes to span each target
+
 //create an event listener
 //trigger as video time updates
 //inside listener loop
@@ -30,6 +23,15 @@ testing[i].addEventListener("mouseout", () => {
     //IF conditions == true
       //set <span> {color: #f7ac57;}
     //else <span> {color: original color;}
+    for (let i = 0; dStart.length; i += 1) {
+    dStart[i].addEventListener("mouseover", () => {
+      dStart[i].style.color = "#f7ac57";
+    });
+
+    dStart[i].addEventListener("mouseout", () => {
+      dStart[i].style.color = "black";
+    })
+    }
 
 
 //EXTRA CREDIT:
