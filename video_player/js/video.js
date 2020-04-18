@@ -1,3 +1,20 @@
+
+
+const testing = document.getElementsByClassName("testClick");
+
+
+
+for (let i = 0; testing.length; i += 1) {
+testing[i].addEventListener("mouseover", () => {
+  testing[i].style.color = "#f7ac57";
+});
+
+testing[i].addEventListener("mouseout", () => {
+  testing[i].style.color = "black";
+})
+}
+
+
 //const spanItems = document.getElementsByTagName("span")[0];
 
 //spanItems.addEventListener("click", () => {
