@@ -10,7 +10,7 @@ video.addEventListener("timeupdate", () => {
   for (let i = 0; dStart.length; i += 1) {
     //over each listener
     let myDStart = dStart[i];
-    let startTime = dStart[i].getAttribute("data-start");
+    let startTime = dStart[i].dataset.start;
     let endTime = dStart[i].dataset.end;
     let playTime = video.currentTime;
         //inside loop use conditional
@@ -23,5 +23,5 @@ video.addEventListener("timeupdate", () => {
         else {
           myDStart.style.color = "black";
         }
-      };
+      }
 });
